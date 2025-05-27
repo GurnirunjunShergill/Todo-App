@@ -1,29 +1,87 @@
-.task-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px;
+.task-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
 }
 
-.task-container .empty-container{
+.task-container h1 {
+  margin: 0 auto 50px auto;
+}
+
+.task-container .add-task-button {
+  margin: auto;
+  width: 20%;
+}
+
+.task-container .empty-container {
+  margin-top: 20px;
+  min-height: 50px;
+  border: 2px solid #313638;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dee1e3;
+}
+
+.task-container .list-container .task-item-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-bottom: solid 4px #313638;
     margin-top: 20px;
-    min-height: 50px;
-    border: 2px solid #313638;
-    border-radius: 4px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DEE1E3;
 }
 
-.task-container .task-item-container{
-    display: flex;
-    flex-direction: column;
+.task-container .task-item-container .task-item-button-container {
+  margin-top: 20px;
+  display: flex;
+}
+
+@media screen and (max-width: 1920px) {
+  .task-container h1 {
+    margin: 0 auto 40px auto;
+    font-size: 72px;
+  }
+
+  .task-container .add-task-button {
     margin: auto;
+    width: 30%;
+  }
 }
 
-.task-container .task-item-container .task-item-button-container{
-    margin-top: 20px;
-    display: flex;
+@media screen and (max-width: 1024px) {
+  .task-container h1 {
+    margin: 0 auto 30px auto;
+    font-size: 56px;
+  }
+
+  .task-container .add-task-button {
+    margin: auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+    .task-container{
+        padding: 20px
+    }
+  .task-container h1 {
+    margin: 0 auto 20px auto;
+    font-size: 40px;
+  }
+
+  .task-container h3,
+  .dialog-container h3 {
+    font-size: 24px;
+  }
+  .list-container h4{
+    font-size: 20px;
+  }
+
+  .task-container .add-task-button {
+    margin: auto;
+    width: 100%;
+  }
 }
