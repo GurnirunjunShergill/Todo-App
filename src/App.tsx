@@ -97,6 +97,7 @@ function App() {
         onClick={() => {
           setOpenTaskCreationModal(true);
         }}
+        data-testid='add-new-task-button'
       >
         Add New Task
       </Button>
@@ -105,6 +106,7 @@ function App() {
         className="list-title"
         variant="h3"
         sx={{ marginTop: "20px" }}
+        data-testid='task-list-heading'
       >
         Tasks
       </Typography>
@@ -176,6 +178,7 @@ function App() {
         className="list-title"
         variant="h3"
         sx={{ marginTop: "20px" }}
+        data-testid='completed-task-list-heading'
       >
         Completed Tasks
       </Typography>
@@ -214,7 +217,7 @@ function App() {
                         });
                       }}
                     >
-                      Add Back to Task List
+                      Reopen Me
                     </Button>
                   </ListItemButton>
                   <ListItemButton>
